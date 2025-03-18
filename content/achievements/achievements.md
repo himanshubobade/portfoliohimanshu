@@ -57,8 +57,8 @@ certCategories:
         text: "Neural Networks by DeepLearning.ai"
         # subtitle: "Advanced solutions with large data sets."
       - path: "/images/certificates/Courses/UdemyDeepLearning.png"
-        text: "Deep Learning - Udemy"
-        # subtitle: "Recognition from corporate partners."
+        text: "Deep Learning - Udemy" 
+        # subtitle: "Recognition from corporate partners." 
       - path: "/images/certificates/Courses/PHPMVC.jpg"
         text: "PHP MVC Framework - Udemy"
         # subtitle: "Recognition from corporate partners."
@@ -76,5 +76,5 @@ certCategories:
         # subtitle: "Recognition from corporate partners."
       - path: "/images/certificates/Courses/IBMCyberSecurity.png"
         text: "IBM Cyber Security"
-        # subtitle: "Recognition from corporate partners."
+        # subtitle: "Recognition from corporate partners." baseURL = "https://himanshubobade.github.io/portfoliohimanshu/"
 ---

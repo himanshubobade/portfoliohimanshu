@@ -45,6 +45,39 @@
         <p class="lead custom-description">
           {{ .description2 }}
         </p>
+        <!-- Debug for a button link -->
+        <p>
+          <strong>Button Link (Raw):</strong>
+          {{ print "/projects/" (urlize .title2) }}
+        </p>
+        <p>
+          <strong>Button Link (absURL):</strong>
+          {{ (print "/projects/" (urlize .title2)) | absURL }}
+        </p>
+
+        <!-- Debug for an image param -->
+        <p>
+          <strong>Image Param (Raw):</strong>
+          {{ .Params.image }}
+        </p>
+        <p>
+          <strong>Image Param (absURL):</strong>
+          {{ .Params.image | absURL }}
+        </p>
+
+        <!-- Debug for a pageImage param -->
+        {{ with .Params.pageImage }}
+        <p>
+          <strong>PageImage (Raw):</strong>
+          {{ . }}
+        </p>
+        <p>
+          <strong>PageImage (absURL):</strong>
+          {{ . | absURL }}
+        </p>
+        {{ end }}
+
+        
         <a href="{{ (print "/projects/" (urlize .title2)) | absURL }}" class="btn btn-primary custom-btn" >{{ .button2.btnText2 }}
           <i class="{{ .button2.icon }}"></i>
         </a>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Achievementsandprojects on </title>
+    <link>http://localhost:1313/achievementsandprojects/</link>
+    <description>Recent content in Achievementsandprojects on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/achievementsandprojects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Achievements</title>
+      <link>http://localhost:1313/achievementsandprojects/achievements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/achievementsandprojects/achievements/</guid>
+      <description>&lt;h2 id=&#34;my-achievements&#34;&gt;My Achievements&lt;/h2&gt;&#xA;&lt;p&gt;This page is all about my achievements.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

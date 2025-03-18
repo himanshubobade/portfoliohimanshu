@@ -1,0 +1,108 @@
+.platform_heading {
+  color: #e93e34
+}
+
+
+/* For screens ≥ 992px, override problematic transforms and enable sticky */
+@media (min-width: 768px) {
+  html, body {
+    /* Ensure scrolling isn’t blocked */
+    overflow: visible !important;
+  }
+  
+  /* Remove the transform from the container that has .rad-fade-down */
+  .rad-fade-down {
+    transform: none !important;
+  }
+  
+  /* Make the right column sticky and force it to align at the top */
+  .sticky-right {
+    position: sticky;
+    top: 120px; /* Adjust this if needed (e.g. header height) */
+    align-self: flex-start; /* Helps ensure the sticky element starts at the top */
+  }
+}
+
+/* For screens < 992px, disable sticky behavior */
+@media (max-width: 767.98px) {
+  .sticky-right {
+    position: static !important;
+  }
+}
+
+.btn .btn-primary .a_and_p {
+  color: #000;
+
+}
+
+.custom-description {
+  margin-bottom: 8px !important;
+  /* padding-bottom: -5px !important; */
+}
+
+.custom-btn {
+  margin-bottom: 30px !important;
+  /* padding-bottom: -5px !important; */
+}
+
+.project_tags_date,
+.project_description {
+    position: relative;
+    font-size: 14px !important; /* add !important if needed */
+    font-weight: 300;
+    color: #333;
+    z-index: 2;
+}
+
+.project_title {
+    position: relative;
+    font-size: 24px !important; /* add !important if needed */
+    font-weight: 600;
+    z-index: 2;
+}
+
+/* Achievements */
+/* Card Container */
+.certificate-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Thumbnail Image */
+.certificate-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+/* Text Container */
+.certificate-text {
+  padding: 12px;
+  text-align: center;
+}
+
+/* Certificate Title */
+.certificate-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Certificate Subtitle */
+.certificate-subtitle {
+  font-size: 14px;
+  font-style: italic;
+  color: #777;
+  margin-top: 4px;
+}

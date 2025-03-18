@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Achievements on </title>
-    <link>http://localhost:1313/portfoliohimanshu/achievements/</link>
+    <link>https://himanshubobade.github.io/portfoliohimanshu/achievements/</link>
     <description>Recent content in Achievements on </description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/portfoliohimanshu/achievements/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://himanshubobade.github.io/portfoliohimanshu/achievements/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Achievements</title>
-      <link>http://localhost:1313/portfoliohimanshu/achievements/achievements/</link>
+      <link>https://himanshubobade.github.io/portfoliohimanshu/achievements/achievements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfoliohimanshu/achievements/achievements/</guid>
+      <guid>https://himanshubobade.github.io/portfoliohimanshu/achievements/achievements/</guid>
       <description></description>
     </item>
   </channel>

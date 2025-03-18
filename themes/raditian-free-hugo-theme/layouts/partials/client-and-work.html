@@ -64,20 +64,6 @@
           <strong>Image Param (absURL):</strong>
           {{ .Params.image | absURL }}
         </p>
-
-        <!-- Debug for a pageImage param -->
-        {{ with .Params.pageImage }}
-        <p>
-          <strong>PageImage (Raw):</strong>
-          {{ . }}
-        </p>
-        <p>
-          <strong>PageImage (absURL):</strong>
-          {{ . | absURL }}
-        </p>
-        {{ end }}
-
-        
         <a href="{{ (print "/projects/" (urlize .title2)) | absURL }}" class="btn btn-primary custom-btn" >{{ .button2.btnText2 }}
           <i class="{{ .button2.icon }}"></i>
         </a>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Works on </title>
+    <link>http://localhost:1313/work/</link>
+    <description>Recent content in Works on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Work At JPL</title>
+      <link>http://localhost:1313/work/jio-platforms-limited/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/work/jio-platforms-limited/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Work At TTMF</title>
+      <link>http://localhost:1313/work/the-tann-mann-gaadi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/work/the-tann-mann-gaadi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Work At Unruffled Feathers</title>
+      <link>http://localhost:1313/work/unruffled-feathers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/work/unruffled-feathers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Work At YRF</title>
+      <link>http://localhost:1313/work/google-developer-students-clubs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/work/google-developer-students-clubs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Work At YRF</title>
+      <link>http://localhost:1313/work/madras-scientific-research-foundation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/work/madras-scientific-research-foundation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Work At YRF</title>
+      <link>http://localhost:1313/work/rising-youth-foundation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/work/rising-youth-foundation/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

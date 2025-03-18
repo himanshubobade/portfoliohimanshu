@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
+    <link rel="stylesheet" href="{{ "css/rad-icons.css" | absURL }}">
+  </head>
+  <body>
+    {{ partial "header.html" . }}
+
+    <section class="section">
+      <div class="container">
+
+        <!-- Page Heading -->
+        <h1 class="mb-4 display-1" style="font-weight: 200;">{{ .Title }}</h1>
+        <!--  -->
+        <div class="row mb-5">
+          <!-- Left Column: Page Description -->
+          <div class="col-md-6">
+            <p>
+              {{ .Params.pageDescription }}
+            </p>
+          </div>
+          <!-- Right Column: Page Image -->
+          <!-- style="max-width: 300px; height: auto;" -->
+          <div class="col-md-6 mt-3 mt-md-0 text-center">
+            {{ with .Params.pageImage }}
+            <img
+              src="{{ . | absURL }}"
+              alt="Work Overview"
+              class="img-fluid"
+              
+            >
+            {{ end }}
+          </div>
+        </div>
+        <!--  -->
+        <!-- Loop through each platform -->
+        {{ range .Params.platforms }}
+          <h2 class="mt-4" style="color: #e93e34; font-weight: 500;">{{ .platformHeading }}</h2>
+
+          <!-- Loop through each project sector in the current platform -->
+          {{ range .projectSectors }}
+            <h3 class="mt-3">{{ .sectorHeading }}</h3>
+
+            <!-- Loop through each project in the current sector -->
+            {{ range .projects }}
+              <!-- Store the project object in $proj -->
+              {{ $proj := . }}
+
+              <div class="mb-4 pl-3">
+                <h4 style="color: #f07871;">{{ $proj.heading }}</h4>
+                <p>{{ $proj.description }}</p>
+
+                <!-- Use 'with $proj.image' so '.' is the image string, 
+                     but we still have $proj for alt text -->
+                {{ with $proj.image }}
+                  <img src="{{ . | absURL }}" alt="{{ $proj.heading }}" class="img-fluid mb-3">
+                {{ end }}
+              </div>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+      </div>
+    </section>
+
+    {{ partial "footer.html" . }}
+    {{ partial "base-foot.html" . }}
+  </body>
+</html>

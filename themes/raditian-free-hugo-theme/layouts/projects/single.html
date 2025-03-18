@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
+    <link rel="stylesheet" href="{{ "css/rad-icons.css" | absURL }}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ "css/custom.css" | absURL }}">
+  </head>
+  <body>
+    {{ partial "header.html" . }}
+
+    <section class="section">
+      <div class="container">
+        <!-- Title -->
+        <h1 class="display-3" style="font-weight: 200;">{{ .Title }}</h1>
+
+        <!-- Optional note -->
+        {{ with .Params.note }}
+        <p class="mb-4">
+          {{ . }}
+        </p>
+        {{ end }}
+
+        <!-- Loop through each project -->
+        {{ range .Params.projects }}
+        <div class="mb-5">
+          <!-- project_name (left) + button (right) -->
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <div class="project_title">
+              {{ .project_name }}
+            </div>
+            {{ with .button }}
+            <a href="{{ .project_link }}" class="btn btn-primary" target="_blank">
+              {{ .btnText }} <i class="{{ .icon }}"></i>
+            </a>
+            {{ end }}
+          </div>
+
+          <!-- tags / date -->
+          <div class="d-flex justify-content-between project_tags_date">
+            <span>{{ .tags }}</span>
+            <span>{{ .upload_date }}</span>
+          </div>
+
+          <!-- description -->
+          <div class="project_description">
+            {{ .description }}
+          </div>
+        </div>
+        {{ end }}
+
+      </div>
+    </section>
+
+    {{ partial "footer.html" . }}
+    {{ partial "base-foot.html" . }}
+  </body>
+</html>

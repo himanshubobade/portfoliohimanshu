@@ -1,0 +1,701 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.145.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=GTM-000000' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-000000');
+</script>
+
+
+<title></title>
+<style>
+     
+    .rad-fade-in {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in.rad-animate {
+        animation-name: rad-fade-in;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-in-long {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-long-fallback;
+        animation-duration: 8s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-animate {
+        animation-name: rad-fade-in-long;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-down {
+        will-change: opacity, transform;
+        animation-name: rad-fade-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform: translateY(-30px);
+    }
+
+    @keyframes rad-fade-down-fallback {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        75% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fonts-loaded .rad-fade-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    .fonts-loaded .rad-fade-down.rad-animate {
+        animation-name: rad-fade-down;
+        animation-duration: 1.1s;
+    }
+
+    @keyframes rad-fade-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+     
+    .rad-scale-down {
+        will-change: opacity, transform;
+        animation-name: rad-scale-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform-origin: 50% 0;
+    }
+
+    @keyframes rad-scale-down-fallback {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        75% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+
+    .fonts-loaded .rad-scale-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+
+    .fonts-loaded .rad-scale-down.rad-animate {
+        animation-name: rad-scale-down;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-scale-down {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+</style>
+
+
+<link rel="stylesheet" href="http://localhost:1313/css/main.css"/>
+
+<link rel="stylesheet" href="http://localhost:1313/css/rad-icons.css"/>
+
+<link rel="stylesheet" href="http://localhost:1313/css/custom.css"/>
+
+
+    
+
+
+</head>
+
+<body>
+
+	<header class="header fixed-top rad-animation-group" id="header">
+  <div class="container rad-fade-in">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <a class="navbar-brand" href="http://localhost:1313/">
+        <span>Himanshu</span>
+        <span>Bobade</span>
+        
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent, #header"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:1313/">HOME</a>
+          </li>
+          
+          
+          <li class="nav-item">
+            
+          
+            
+            
+              
+            
+          
+            
+            <a class="nav-link" href="http://localhost:1313/#experience" data-scroll>
+              EXPERIENCE
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            
+          
+            
+            
+              
+            
+          
+            
+            <a class="nav-link" href="http://localhost:1313/#portfolio" data-scroll>
+              ACHIEVEMENTS
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            
+          
+            
+            
+              
+            
+          
+            
+            <a class="nav-link" href="http://localhost:1313/#portfolio" data-scroll>
+              PROJECTS
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+	
+	
+<section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
+  <div class="rad-showcase__bg">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="http://localhost:1313/img/showcase/edited-bg-whiter.png"
+      data-srcset="http://localhost:1313/img/showcase/edited-bg-whiter.png 1x, http://localhost:1313/img/showcase/edited-bg-whiter.png 2x"
+      alt=""
+    />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
+        <h1 class="display-1">
+          Hello, I’m Himanshu.
+          <br />
+          <span
+            >Data Enthusiast</span
+          >
+        </h1>
+        <p class="lead">
+          I am a data engineer and know bits and pieces of data science with experience at JPL and other organizations, specializing in building robust data pipelines, frameworks, and machine learning models using technologies like Hadoop, Spark, and cloud services. I leverage these skills to ensure data accuracy and unlock valuable insights that drive business success. Passionate about continuous learning and collaboration, I thrive on helping organizations achieve their goals through innovative, data-driven solutions.
+        </p>
+        <a
+          href="mailto:himanshubobade007@gmail.com"
+          class="btn btn-primary"
+        >
+          <i class="icon-mail-fill"></i>
+          Contact
+        </a>
+      </div>
+    </div>
+    <div class="row platform-links">
+      <div class="col-12">
+        
+        <a href="https://www.linkedin.com/in/himanshu-bobade/" target="_blank"
+          ><i class="icon-linkedin-line"></i
+        ></a>
+        
+        <a href="https://github.com/himanshubobade" target="_blank"
+          ><i class="icon-github-line"></i
+        ></a>
+        
+        <a href="https://www.youtube.com/@himanshubobade" target="_blank"
+          ><i class="icon-youtube-line"></i
+        ></a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="rad-showcase__bg rad-showcase__bg--mobile">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="http://localhost:1313/img/showcase/edited-bg-whiter.png"
+      alt=""
+    />
+  </div>
+</section>
+
+
+	
+	
+
+	
+	
+<section class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row rad-fade-down">
+            <div class="col-12">
+                <h2>Education</h2>
+                <div class="row pt-2 pt-md-4">
+                    
+                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                        <div class="education">
+                            <div class="education__date">2018-2022</div>
+                            <div class="education__title">University of Mumbai</div>
+                            <div class="education__degree">
+                                Bachelor of Engineering (BE), Computer Science
+                            </div>
+                            <div class="education__CGPA">
+                                CGPA - 8.25/10
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                        <div class="education">
+                            <div class="education__date">Preparing</div>
+                            <div class="education__title">Lean Six Sigma, ECBA</div>
+                            <div class="education__degree">
+                                Exploring a few more options
+                            </div>
+                            <div class="education__CGPA">
+                                with professional life
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+	
+<section id="experience" class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row flex-column-reverse flex-md-row rad-fade-down">
+            <div class="col-12 col-sm-6 mt-5 mt-sm-0">
+                
+                  
+                  <div class="experience row mb-3">
+                    
+                    <div class="col-6">
+                      <div class="experience__date">Jul 2022 - Apr 2024</div>
+                      <div class="experience__title">Data Engineer</div>
+                      <div class="experience__company">Jio Platforms Limited</div>
+                    </div>
+                    
+                    <div class="col-6 d-flex align-items-center justify-content-end">
+                      <a href="http://localhost:1313/work/jio-platforms-limited" class="btn btn-frameless" >
+                        <i class="icon-briefcase"></i>
+                        View Work
+                        <i class="icon-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                
+                  
+                  <div class="experience row mb-3">
+                    
+                    <div class="col-6">
+                      <div class="experience__date">May 2021 - Feb 2022</div>
+                      <div class="experience__title">Data Science Intern</div>
+                      <div class="experience__company">Unruffled Feathers</div>
+                    </div>
+                    
+                    <div class="col-6 d-flex align-items-center justify-content-end">
+                      <a href="http://localhost:1313/work/unruffled-feathers" class="btn btn-frameless" >
+                        <i class="icon-briefcase"></i>
+                        View Work
+                        <i class="icon-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                
+                  
+                  <div class="experience row mb-3">
+                    
+                    <div class="col-6">
+                      <div class="experience__date">Aug 2021 - Jun 2022</div>
+                      <div class="experience__title">Technical Lead</div>
+                      <div class="experience__company">Google Developer Students Clubs</div>
+                    </div>
+                    
+                    <div class="col-6 d-flex align-items-center justify-content-end">
+                      <a href="http://localhost:1313/work/google-developer-students-clubs" class="btn btn-frameless" >
+                        <i class="icon-briefcase"></i>
+                        View Work
+                        <i class="icon-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                
+                  
+                  <div class="experience row mb-3">
+                    
+                    <div class="col-6">
+                      <div class="experience__date">Aug 2021 - Jan 2022</div>
+                      <div class="experience__title">Flutter Developer Intern</div>
+                      <div class="experience__company">The Tann Mann Gaadi</div>
+                    </div>
+                    
+                    <div class="col-6 d-flex align-items-center justify-content-end">
+                      <a href="http://localhost:1313/work/the-tann-mann-gaadi" class="btn btn-frameless" >
+                        <i class="icon-briefcase"></i>
+                        View Work
+                        <i class="icon-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                
+                  
+                  <div class="experience row mb-3">
+                    
+                    <div class="col-6">
+                      <div class="experience__date">May 2021 - Jul 2021</div>
+                      <div class="experience__title">Data Science Intern</div>
+                      <div class="experience__company">Madras Scientific Research Foundation</div>
+                    </div>
+                    
+                    <div class="col-6 d-flex align-items-center justify-content-end">
+                      <a href="http://localhost:1313/work/madras-scientific-research-foundation" class="btn btn-frameless" >
+                        <i class="icon-briefcase"></i>
+                        View Work
+                        <i class="icon-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                
+                  
+                  <div class="experience row mb-3">
+                    
+                    <div class="col-6">
+                      <div class="experience__date">Oct 2020 - Nov 2020</div>
+                      <div class="experience__title">PHP developer and Database Intern</div>
+                      <div class="experience__company">Rising Youth Foundation</div>
+                    </div>
+                    
+                    <div class="col-6 d-flex align-items-center justify-content-end">
+                      <a href="http://localhost:1313/work/rising-youth-foundation" class="btn btn-frameless" >
+                        <i class="icon-briefcase"></i>
+                        View Work
+                        <i class="icon-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                
+              </div>
+            <div class="col-12 col-sm-6 mt-5 mt-sm-0 sticky-right">
+                <h2>Experience</h2>
+                <p class="lead">
+                    Over 2&#43; years of experience in Data Engineering as a FTE and 1&#43; year of experience in Data Science as an intern. I design &amp; develop scalable pipelines with optimzation and accuracy
+                </p>
+                <a href="https://www.linkedin.com/in/himanshu-bobade/" class="btn btn-primary"
+                   target="_blank">
+                    <i class="icon-linkedin-fill"></i>
+                    Linkedin
+                    <i class="icon-arrow-right"></i></a>
+                <a href="http://localhost:1313/Himanshu_Bobade_DE_2025.pdf" class="btn btn-frameless"
+                   download="Himanshu_Bobade_DE_2025.pdf">
+                    <i class="icon-profile-fill"></i>
+                    Download My Resume
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+	
+<section id="portfolio" class="section section--border-bottom">
+  <div class="container">
+    <h2 class=" rad-animation-group rad-fade-down">
+      Projects And Achievements
+    </h2>
+    
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+    >
+      
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Achievements</h3>
+        <p class="lead custom-description">
+          Grateful for the milestones I&#39;ve reached and the lessons they&#39;ve brought along the way.
+        </p>
+        <a href="http://localhost:1313/achievements/achievements" class="btn btn-primary custom-btn" >View Achievements
+          <i class="icon-arrow-right"></i>
+        </a>
+        
+        
+        
+        <h3>Projects</h3>
+        <p class="lead custom-description">
+          Every experience has been a step toward learning and improving.
+        </p>
+        <a href="http://localhost:1313/projects/projects" class="btn btn-primary custom-btn" >View Project List
+          <i class="icon-arrow-right"></i>
+        </a>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-left-backward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="http://localhost:1313/img/works/portfolio-section-bg.jpg"
+          data-srcset="http://localhost:1313/img/works/portfolio-section-bg.jpg 1x, http://localhost:1313/img/works/portfolio-section-bg.jpg 2x"
+          alt=""
+        />
+      </div>
+      
+    </div>
+    
+  </div>
+</section>
+
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+
+	<footer class="footer">
+  <div class="container">
+    
+    <div class="footer__links">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link" href="/">HOME</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:1313/#experience">EXPERIENCE</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:1313/#portfolio">ACHIEVEMENTS</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:1313/#portfolio">PROJECTS</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </div>
+</footer>
+
+    <script src='http://localhost:1313/js/rad-animations.js'></script>
+<script src='http://localhost:1313/js/library/lozad.min.js'></script>
+<script>
+  window.addEventListener("load", function() {
+    var observer = window.lozad(".lozad", {
+      rootMargin: window.innerHeight / 2 + "px 0px",
+      threshold: 0.01
+    }); 
+    observer.observe();
+  });
+</script>
+<script src='http://localhost:1313/js/library/jquery-3.3.1.slim.min.js'></script>
+<script src='http://localhost:1313/js/library/bootstrap.min.js'></script>
+<script src='http://localhost:1313/js/sticky-header.js'></script>
+<script src='http://localhost:1313/js/library/smooth-scroll.polyfills.min.js'></script>
+<script src='http://localhost:1313/js/library/fontfaceobserver.js'></script>
+<script>
+  (function(w) {
+    
+    if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
+      return;
+    }
+    var fontA = new w.FontFaceObserver("Inter", {
+      weight: 300
+    });
+    var fontB = new w.FontFaceObserver("Inter", {
+      weight: 400
+    });
+    var fontC = new w.FontFaceObserver("Inter", {
+      weight: 500
+    });
+    var fontD = new w.FontFaceObserver("Inter", {
+      weight: 600
+    });
+    var fontE = new w.FontFaceObserver("Inter", {
+      weight: 700
+    });
+    var fontF = new w.FontFaceObserver("Inter", {
+      weight: 900
+    });
+    w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
+      w.document.documentElement.className += " fonts-loaded";
+    });
+  })(this);
+</script>
+<script>
+  const scroll = new SmoothScroll('a[href*="#"]');
+    $('a.nav-link').on('click', () => {
+      const navbar = $('.navbar-collapse');
+      if (navbar && navbar.hasClass('show')) {
+        $('.navbar-toggler').click();
+      }
+    })
+</script>
+
+</body>
+
+</html>

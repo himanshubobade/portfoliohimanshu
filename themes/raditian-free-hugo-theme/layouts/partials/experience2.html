@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
+    <link rel="stylesheet" href="{{ "css/rad-icons.css" | absURL }}">
+
+    <!-- Optional: inline style for thumbnail shape, border, etc. -->
+    <style>
+      .gallery-thumb {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: 50% 50%;
+      }
+
+      /* Wrapper around each certificate item */
+      .certificate-card {
+        border: 1px solid #ddd;   /* light border */
+        border-radius: 4px;       /* slight rounding */
+        padding: 10px;            /* spacing inside the border */
+      }
+
+      /* (Optional) hover effect */
+      .certificate-card:hover {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    {{ partial "header.html" . }}
+
+    <section class="section">
+      <div class="container">
+        <!-- Page Title -->
+        <h1 class="display-3" style="font-weight: 200;">{{ .Title }}</h1>
+
+        <!-- Intro Text -->
+        {{ with .Params.introText }}
+        <p class="mb-4">{{ . }}</p>
+        {{ end }}
+
+        <!-- Loop over each category -->
+        {{ range $categoryIndex, $cat := .Params.certCategories }}
+          <!-- Category Heading -->
+          <h3 class="mb-3">{{ $cat.heading }}</h3>
+          <div class="row">
+            <!-- Loop over images in this category -->
+            {{ range $imageIndex, $cert := $cat.images }}
+            <div class="col-md-4 mb-4">
+              <div class="certificate-card text-center">
+                <!-- Button triggers the modal -->
+                <button
+                  type="button"
+                  class="p-0 border-0 bg-transparent"
+                  data-bs-toggle="modal"
+                  data-bs-target="#certModal-{{ $cat.heading | urlize }}-{{ $imageIndex }}"
+                >
+                  <!-- Thumbnail with fixed height / object-fit -->
+                  <img
+                    src="{{ $cert.path | absURL }}"
+                    alt="{{ $cert.text }}"
+                    class="img-fluid gallery-thumb"
+                  >
+                </button>
+                <!-- Text below the thumbnail -->
+                <div class="mt-2">
+                  {{ $cert.text }}
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal for expanded image -->
+            <div
+              class="modal fade"
+              id="certModal-{{ $cat.heading | urlize }}-{{ $imageIndex }}"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body p-0">
+                    <img
+                      src="{{ $cert.path | absURL }}"
+                      alt="{{ $cert.text }}"
+                      class="img-fluid w-100"
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        {{ end }}
+
+      </div>
+    </section>
+
+    {{ partial "footer.html" . }}
+    {{ partial "base-foot.html" . }}
+
+    <!-- Bootstrap 5 JS (if not already included by your theme) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>

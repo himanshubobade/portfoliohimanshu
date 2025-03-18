@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Works on </title>
-    <link>http://localhost:1313/work/</link>
+    <link>https://himanshubobade.github.io/portfoliohimanshu/work/</link>
     <description>Recent content in Works on </description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/work/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://himanshubobade.github.io/portfoliohimanshu/work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Work At Google Developor Student Clubs</title>
+      <link>https://himanshubobade.github.io/portfoliohimanshu/work/google-developer-students-clubs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://himanshubobade.github.io/portfoliohimanshu/work/google-developer-students-clubs/</guid>
+      <description>&lt;h1 id=&#34;platforms&#34;&gt;platforms:&lt;/h1&gt;&#xA;&lt;h1 id=&#34;--platformheading-campus-ambassador-dashboard&#34;&gt;- platformHeading: &amp;ldquo;Campus Ambassador Dashboard&amp;rdquo;&lt;/h1&gt;&#xA;&lt;h1 id=&#34;projectsectors&#34;&gt;projectSectors:&lt;/h1&gt;&#xA;&lt;h1 id=&#34;--sectorheading-backend-mvc-framework-integration-with-visualization&#34;&gt;- sectorHeading: &amp;ldquo;Backend MVC framework integration with visualization&amp;rdquo;&lt;/h1&gt;&#xA;&lt;h1 id=&#34;projects&#34;&gt;projects:&lt;/h1&gt;&#xA;&lt;h1 id=&#34;--heading-&#34;&gt;- heading: &amp;quot;&amp;quot;&lt;/h1&gt;&#xA;&lt;h1 id=&#34;description-coded-php-mvc-framework-with-mysql-to-visualize-student-ambassador-progress-data-dashboards-for-a-non---profit-organization&#34;&gt;description: &amp;ldquo;Coded PHP MVC framework with MySQL to visualize student ambassador progress data dashboards for a non - profit organization.&amp;rdquo;&lt;/h1&gt;&#xA;&lt;h1 id=&#34;image-imagesyrfpng&#34;&gt;image: &amp;ldquo;/images/YRF.png&amp;rdquo;&lt;/h1&gt;&#xA;&lt;h1 id=&#34;heading&#34;&gt;&amp;mdash;&lt;/h1&gt;</description>
+    </item>
     <item>
       <title>Work At JPL</title>
-      <link>http://localhost:1313/work/jio-platforms-limited/</link>
+      <link>https://himanshubobade.github.io/portfoliohimanshu/work/jio-platforms-limited/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work/jio-platforms-limited/</guid>
+      <guid>https://himanshubobade.github.io/portfoliohimanshu/work/jio-platforms-limited/</guid>
       <description></description>
     </item>
     <item>
-      <title>Work At TTMF</title>
-      <link>http://localhost:1313/work/the-tann-mann-gaadi/</link>
+      <title>Work At Madras Scietific Research Foundation</title>
+      <link>https://himanshubobade.github.io/portfoliohimanshu/work/madras-scientific-research-foundation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work/the-tann-mann-gaadi/</guid>
+      <guid>https://himanshubobade.github.io/portfoliohimanshu/work/madras-scientific-research-foundation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Work At RYF</title>
+      <link>https://himanshubobade.github.io/portfoliohimanshu/work/rising-youth-foundation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://himanshubobade.github.io/portfoliohimanshu/work/rising-youth-foundation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Work At TTMG</title>
+      <link>https://himanshubobade.github.io/portfoliohimanshu/work/the-tann-mann-gaadi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://himanshubobade.github.io/portfoliohimanshu/work/the-tann-mann-gaadi/</guid>
       <description></description>
     </item>
     <item>
       <title>Work At Unruffled Feathers</title>
-      <link>http://localhost:1313/work/unruffled-feathers/</link>
+      <link>https://himanshubobade.github.io/portfoliohimanshu/work/unruffled-feathers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work/unruffled-feathers/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Work At YRF</title>
-      <link>http://localhost:1313/work/google-developer-students-clubs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work/google-developer-students-clubs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Work At YRF</title>
-      <link>http://localhost:1313/work/madras-scientific-research-foundation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work/madras-scientific-research-foundation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Work At YRF</title>
-      <link>http://localhost:1313/work/rising-youth-foundation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work/rising-youth-foundation/</guid>
+      <guid>https://himanshubobade.github.io/portfoliohimanshu/work/unruffled-feathers/</guid>
       <description></description>
     </item>
   </channel>

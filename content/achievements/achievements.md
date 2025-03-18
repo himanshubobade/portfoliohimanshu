@@ -76,5 +76,5 @@ certCategories:
         # subtitle: "Recognition from corporate partners."
       - path: "/images/certificates/Courses/IBMCyberSecurity.png"
         text: "IBM Cyber Security"
-        # subtitle: "Recognition from corporate partners." baseURL = "https://himanshubobade.github.io/portfoliohimanshu/"
+        # subtitle: "Recognition from corporate partners."
 ---

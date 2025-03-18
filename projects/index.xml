@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on </title>
-    <link>http://localhost:1313/portfoliohimanshu/projects/</link>
+    <link>https://himanshubobade.github.io/portfoliohimanshu/projects/</link>
     <description>Recent content in Projects on </description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/portfoliohimanshu/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://himanshubobade.github.io/portfoliohimanshu/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Projects</title>
-      <link>http://localhost:1313/portfoliohimanshu/projects/projects/</link>
+      <link>https://himanshubobade.github.io/portfoliohimanshu/projects/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfoliohimanshu/projects/projects/</guid>
+      <guid>https://himanshubobade.github.io/portfoliohimanshu/projects/projects/</guid>
       <description></description>
     </item>
   </channel>

@@ -36,7 +36,8 @@
                   {{ . | absURL }}
                 </p>
             <img
-              src="{{ . | absURL }}"
+              src="{{ (print "/portfoliohimanshu/" .) | absURL }}"
+              
               alt="Work Overview"
               class="img-fluid"
               
@@ -65,7 +66,9 @@
                 <!-- Use 'with $proj.image' so '.' is the image string, 
                      but we still have $proj for alt text -->
                 {{ with $proj.image }}
-                  <img src="{{ . | absURL }}" alt="{{ $proj.heading }}" class="img-fluid mb-3">
+                <img src="{{ (print "/portfoliohimanshu/" .) | absURL }}" alt="{{ $proj.heading }}" class="img-fluid mb-3">
+                <p>{{ (print "/portfoliohimanshu/" .) | absURL }}</p>
+                  <!-- <img src="{{ . | absURL }}" alt="{{ $proj.heading }}" class="img-fluid mb-3"> -->
                 {{ end }}
               </div>
             {{ end }}

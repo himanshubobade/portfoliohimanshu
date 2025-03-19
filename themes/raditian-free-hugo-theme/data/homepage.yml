@@ -98,7 +98,7 @@ experience:
   button2:
     icon: "icon-profile-fill"
     btnText: "Download My Resume"
-    URL: "/Himanshu_Bobade_DE_2025.pdf"
+    URL: "/portfoliohimanshu/Himanshu_Bobade_DE_2025.pdf"
 
   items:
     - title: "Data Engineer"

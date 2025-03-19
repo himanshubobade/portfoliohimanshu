@@ -41,7 +41,7 @@
                 >
                   <!-- Thumbnail Image -->
                   <img
-                    src="{{ $cert.path | absURL }}"
+                    src="{{ (print "/portfoliohimanshu/" $cert.path) | absURL }}"
                     alt="{{ $cert.text }}"
                   >
                 </button>
@@ -66,7 +66,7 @@
                 <div class="modal-content">
                   <div class="modal-body p-0">
                     <img
-                      src="{{ $cert.path | absURL }}"
+                      src="{{ (print "/portfoliohimanshu/" $cert.path) | absURL }}"
                       alt="{{ $cert.text }}"
                       class="img-fluid w-100"
                     >

@@ -28,33 +28,33 @@ theme = "raditian-free-hugo-theme"
 
   [[menu.header]]
   name = "Experience"
-  URL = "#experience"
+  URL = "/portfoliohimanshu/#experience"
   weight = 2
 
   [[menu.header]]
   name = "Achievements"
-  URL = "#portfolio"
+  URL = "/portfoliohimanshu/#portfolio"
   weight = 3
 
   [[menu.header]]
   name = "Projects"
-  URL = "#portfolio"
+  URL = "/portfoliohimanshu/#portfolio"
   weight = 4
 
 
   [[menu.footer]]
   name = "Experience"
-  URL = "#experience"
+  URL = "/portfoliohimanshu/#experience"
   weight = 2
 
   [[menu.footer]]
   name = "Achievements"
-  URL = "#portfolio"
+  URL = "/portfoliohimanshu/#portfolio"
   weight = 3
 
   [[menu.footer]]
   name = "Projects"
-  URL = "#portfolio"
+  URL = "/portfoliohimanshu/#portfolio"
   weight = 4
 
 

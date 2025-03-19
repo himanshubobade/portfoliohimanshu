@@ -68,7 +68,7 @@ certCategories:
       - path: "/images/certificates/Courses/UdemyAndroid.png"
         text: "Android Development - Udemy"
         # subtitle: "Recognition from corporate partners."
-      - path: "/images/certificates/Courses/Udemyhtmlcss.jpg"
+      - path: "/images/certificates/Courses/udemyhtmlcss.jpg"
         text: "HTML/CSS - Udemy"
         # subtitle: "Recognition from corporate partners."
       - path: "/images/certificates/Courses/UdemyJavascript.jpg"
